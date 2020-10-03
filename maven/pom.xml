@@ -22,6 +22,7 @@
     <vavr.version>0.10.1</vavr.version>
     <lombok.version>1.18.12</lombok.version>
     <mapstruct.version>1.3.0.Final</mapstruct.version>
+    <assertj.version>3.17.2</assertj.version>
 
     <junitJupiterExcludedTags/>
   </properties>
@@ -54,6 +55,12 @@
         <version>${junit.version}</version>
         <scope>import</scope>
         <type>pom</type>
+      </dependency>
+      <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>${assertj.version}</version>
+        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
